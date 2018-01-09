@@ -144,7 +144,7 @@ def pollresponse(URL, counter, outfile):
 
 
 def messagebuilder(infile, testname):
-    """tra
+    """  
     Note:
         This method is only called for IPv4 addresses.
     Args:
@@ -175,6 +175,10 @@ def main(arguments):
     global infile
 
     # Specify required arguments
+    """
+    Input csv files should be structured like this:
+    |domainname|institution|sector|
+    """  
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("infile", help="Input file", type=argparse.FileType("r"))
     parser.add_argument("outfile", help="Output file", type=argparse.FileType("w"))
