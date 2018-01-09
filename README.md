@@ -1,2 +1,3 @@
 # API-bulk-request
-Crude testscript to run bulkscans
+
+This repository is made for some **really** specific scripts wich you won't need to use.
